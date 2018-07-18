@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+ {% block title %}{% endblock %}
+ {% block body %}
+<table class="table table-striped">
+
+  <tr>
+    <th>Nom</th>
+    <th>entraîneur</th>
+    <th>année de création</th>
+  </tr>
+  {% for team in teams %}
+  <tr>
+    <td>{{team.name}}</td>
+    <td>{{team.coach}}</td>
+    <td>{{team.foundationYear}}</td>
+  </tr>
+
+  {% endfor %}
+</table>
+
+
+{% endblock %}

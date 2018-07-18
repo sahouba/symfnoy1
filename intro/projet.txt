@@ -1,0 +1,17 @@
+CLient -> DEMANDE -> WEB APP SUR SUIJET Y
+
+  site basique (vitrine,petite association)
+  ->wordpress || natif (from scratch)
+  site intermédiaire +(sections dynamiques, statistiques, interface admin )
+  -> CMS (ex: drupal, Joomla, Typo3)|| Framework
+
+  Exemple: Blablacar
+  V1: natif
+  v2: symfony
+
+  Bas niveau -> Haut niveau
+  Natif < Framework(symfony) < CMS(Drupal)
+
+  Bas niveau
+  - plus de liberté
+  - Moins de fonctionnalités préçoncues

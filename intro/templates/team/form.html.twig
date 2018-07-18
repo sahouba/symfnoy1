@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+ {% block title %}{% endblock %}
+ {% block body %}
+ <form class="" action="" method="post">
+   <div class="">
+  <label for="name">Name : </label>
+ 	<input type="text" class="form-control" placeholder=" name" name="name" ><br><br>
+ 	<label for="coach">Coach : </label>
+ 	<input type="text" class="form-control"name="coach"  ><br><br>
+  </div>
+  <div class="">
+  <label for="FoundationYear">FoundationYear : </label>
+ 	<input type="text" class="form-control" name="foundationYear"><br><br>
+  </div>
+
+ 	<button type="submit" name="button">Add</button>
+  </form>
+
+
+{% endblock %}

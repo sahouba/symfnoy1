@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{player.name}}{% endblock %}
+ {% block body %}
+    <p>Infos sur le joueur  {{player.name}}</p>
+     <p> Name : {{player.name}}</p>
+     <p> Numéro de maillot :{{player.num}}</p>
+       {% if player.substitute %}
+       <span>Remplaçant</span> {% else %}
+       <span>Titulaire</span> {% endif %}
+       <p> Photo </p>
+      <img src= "{{player.img}}"  height="100px" alt="...">
+
+{% endblock %}
