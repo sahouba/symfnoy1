@@ -1,8 +1,3 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
-#Exerciec
-# créer une route /bravo qui affichera à l'écran "le routage Symfony est excellent!"
 index:
   path: /
   controller: App\Controller\DefaultController::index
@@ -27,13 +22,17 @@ players:
   path: /players
   controller: App\Controller\DemoController::players
 
-players_form:
+player_form:
   path: /playerform
   controller: App\Controller\DemoController::playerForm
 
 team_form:
   path: /teamform
   controller: App\Controller\TeamController::teamForm
+
+team_form_bis:
+  path: /teamformbis
+  controller: App\Controller\TeamController::teamFormBis
 
 teams:
   path: /teams

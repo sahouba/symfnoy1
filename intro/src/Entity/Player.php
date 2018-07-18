@@ -8,7 +8,6 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity(repositoryClass="App\Repository\PlayerRepository")
  */
 class Player
-
 {
     /**
      * @ORM\Id()
@@ -37,13 +36,14 @@ class Player
      */
     private $photo;
 
-    public function __construct($name,$num,?bool $substitute,?string $photo)
-    { /* Ajout d(un __construct)*/
+    // Ajout d'un constructeur
+    public function __construct(
+      $name, $num, ?bool $substitute, ?string $photo) {
+
       $this->setName($name);
       $this->setNum($num);
       $this->setSubstitute($substitute);
       $this->setPhoto($photo);
-
     }
 
     public function getId()

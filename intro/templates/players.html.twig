@@ -1,15 +1,17 @@
 {% extends 'base.html.twig' %}
+
 {% block title %}{{title}}{% endblock %}
+
 {% block body %}
 <ul>
   {% for player in players %}
-  <li>{{player.name}}({{player.num}})</li>
+  <li>{{player.name}} ({{player.num}})</li>
   {% endfor %}
 </ul>
-<select class="" name="">
-   {% for player in players2 %}
-      <option value="{{player.id}}">{{player.name}}</option>
-  {% endfor %}%}
 
+<select>
+  {% for player in players2 %}
+  <option value="{{player.id}}">{{player.name}}</option>
+  {% endfor %}
 </select>
 {% endblock %}
